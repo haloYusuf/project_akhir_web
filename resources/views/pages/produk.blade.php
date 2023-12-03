@@ -13,7 +13,7 @@
         @foreach($data as $v)
         <tr>
             <td class="text-center">{{$v['ProductID']}}</td>
-            <td class="text-center">{{$v['ProductName']}}</td>
+            <td class="text-center"><a href="/produk/detail/{{$v['ProductID']}}">{{$v['ProductName']}}</a></td>
             <td class="text-center">{{$v['UnitPrice']}}</td>
         </tr>
         @endforeach
