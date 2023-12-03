@@ -15,7 +15,7 @@ class ProdukController extends Controller
 
     public function detail($id)
     {
-        $data = Produk::where('ProductID', $id)->get()->toArray();
-        var_dump($data);
+        $data = Produk::where('ProductID', $id)->first()->toArray();
+        return view('pages.detail', compact('data'));
     }
 }
