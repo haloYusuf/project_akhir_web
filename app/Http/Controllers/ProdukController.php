@@ -9,8 +9,8 @@ class ProdukController extends Controller
 {
     public function index($id)
     {
-        $data = Produk::where('CategoryID', $id)->get('ProductID', 'ProductName', 'UnitPrice')->toArray();
-        var_dump($data);
+        $data = Produk::where('CategoryID', $id)->get(['ProductID', 'ProductName', 'UnitPrice'])->toArray();
+        return view('pages.produk', compact('data'));
     }
 
     public function detail($id)
