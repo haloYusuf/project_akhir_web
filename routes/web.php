@@ -20,3 +20,7 @@ Route::get('/', [KategoriController::class, 'index']);
 Route::get('/produk/{id}', [ProdukController::class, 'index']);
 
 Route::get('/produk/detail/{id}', [ProdukController::class, 'detail']);
+
+Route::post('/shoppingCart', [ProdukController::class, 'submit']);
+
+Route::get('/shoppingCart', [ProdukController::class, 'shoppingCart']);

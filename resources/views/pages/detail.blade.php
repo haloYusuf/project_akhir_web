@@ -1,7 +1,8 @@
 @extends('template')
 @section('content')
 
-<form action="" method="post">
+<form action="/shoppingCart" method="post">
+    @csrf
     <table class="table table-borderless">
         <tr>
             <th>Product Name</th>
@@ -45,6 +46,7 @@
         </tr>
     </table>
     <input type="hidden" class="form-control" name="nama" value="{{$data['ProductName']}}" required>
+    <input type="hidden" class="form-control" name="price" value="{{$data['UnitPrice']}}" required>
     <button type="submit" class="btn btn-success mt-3" style="width:100%">Submit</button>
 </form>
 

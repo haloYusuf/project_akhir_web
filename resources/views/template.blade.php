@@ -23,7 +23,7 @@
                         <a class="nav-link" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Shopping Cart</a>
+                        <a class="nav-link" href="/shoppingCart">Shopping Cart</a>
                     </li>
                 </ul>
             </div>
